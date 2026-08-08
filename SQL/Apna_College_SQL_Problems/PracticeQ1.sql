@@ -7,7 +7,7 @@ CREATE DATABASE XYZ;
 
 USE XYZ;
 
-# Step 1: Create table
+# Step 1: Create table # Step 2: Add (insert) information into the table # Step 3: Select & view all your table data
 CREATE TABLE employee (
     id INT PRIMARY KEY,
     name VARCHAR(20),
