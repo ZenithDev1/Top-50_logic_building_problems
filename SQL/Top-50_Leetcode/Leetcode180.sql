@@ -1,0 +1,13 @@
+#Problem Link: https://leetcode.com/problems/consecutive-numbers/description/?envType=study-plan-v2&envId=top-sql-50
+#Difficulty Level: Medium
+
+
+#Solution:
+with cte as (
+    select num,
+    lead(num,1) over() num1,
+    lead(num,2) over() num2
+    from logs
+
+)
+select distinct num ConsecutiveNums from cte where (num=num1) and (num=num2)
