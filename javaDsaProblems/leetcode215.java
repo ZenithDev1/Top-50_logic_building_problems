@@ -1,7 +1,5 @@
 package javaDsaProblems;
-
 import java.util.Arrays;
-
 public class leetcode215 {
         public static void main(String[] args) {   
     }
